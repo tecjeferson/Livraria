@@ -1,0 +1,11 @@
+CREATE TABLE IF NOT EXISTS `livros` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `Isbn` INT NOT NULL,
+  `Autor` VARCHAR(100) NOT NULL,
+  `Nome` VARCHAR(100) NOT NULL,
+  `Preco` DECIMAL(13,2) NOT NULL,
+  `DataPublicacao` DATETIME NULL,
+  `ImagemUrl` VARCHAR(250) NULL,
+  `ImgThumnailRrl` VARCHAR(250) NULL,
+  PRIMARY KEY (`id`))
+ENGINE = InnoDB;
