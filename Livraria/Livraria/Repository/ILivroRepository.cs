@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 
 
-namespace Livraria.Services
+namespace Livraria.Repository
 {
-    public interface ILivroService
+    public interface ILivroRepository
     {
         Livro Create(Livro livros);
         Livro FindById(long id);

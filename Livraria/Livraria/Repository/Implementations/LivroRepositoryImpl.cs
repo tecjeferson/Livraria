@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 using Livraria.Model;
 using Livraria.Model.Context;
 
-namespace Livraria.Services.Implementations
+namespace Livraria.Repository.Implementations
 {
-    public class LivroServiceImpl : ILivroService
+    public class LivroBusinessImpl : ILivroBusiness
     {
         private MySQLContext _context;
-        public LivroServiceImpl(MySQLContext context)
+        public LivroRepositoryImpl(MySQLContext context)
         {
             _context = context;
         }

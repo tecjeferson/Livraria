@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Livraria.Model.Context;
-using Livraria.Services;
-using Livraria.Services.Implementations;
+using Livraria.Business;
+using Livraria.Business.Implementations;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -34,7 +34,7 @@ namespace Livraria
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
 
             //Injeção de dependencias
-            services.AddScoped<ILivroService, LivroServiceImpl>();
+            services.AddScoped<ILivroBusiness, LivroBusinessImpl>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
